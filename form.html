@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-color: rgb(202, 20, 20);
+            font-weight: bold;
+            font-size: 17px;
+        }
+        #first_div{
+            margin-left: 560px;
+            margin-right: 550px;
+            margin-top: 80px;
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 16px;
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+        h1{
+            text-align: center;
+        }
+        #submit{
+            padding:10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            margin-left: 175px;
+            font-size: 18px;
+            color: white;
+            border-radius: 10px;
+            font-style: normal;
+            border: none;
+            background-color: rgb(52, 195, 52);
+        }
+    </style>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <div id="first_div">
+
+    <form>
+        <div>
+            <label for="feedback">choose your feedback:</label>
+            <select name="feedback" id="feedback">
+                <option value="Excellent">Excellent</option>
+                <option value="good">good</option>
+                <option value="bad">Bad</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="textarea">Message:</label><br>
+            <textarea name="message" id="textarea" cols="40" rows="10" placeholder="Enter your valuable feedback here"></textarea>
+        </div>
+        <br>
+        <p>Click you valuable feedback</p>
+        <div>
+            <input type="checkbox" id="feed1" value="Excellent">
+            <label for="feed1">Excelent</label><br>
+            <input type="checkbox" name="feed2" id="feed2" value="Good">
+            <label for="feed2">Good</label><br>
+            <input type="checkbox" name="feed3" id="feed3" value="Bad">
+            <label for="feed3">Bad</label>
+        </div>
+        <br>
+        <div>
+            <label for="age">Your age:</label>
+            <input type="number" id="age" min="10" max="100">
+        </div>
+        <br>
+        <div>
+            <label for="email">Enter Your Email:</label><br>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="pwd">Enter you password:</label><br>
+            <input type="password" id="pwd" min="8">
+        </div>
+        <br>
+        <div>
+            <label for="url">Website url(optional):</label><br>
+            <input type="url" id="url">
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="terms" value="terms&conditions" required>
+            <label for="terms">agree terms and conditions</label>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit" id="submit">
+        </div>
+    </form>
+</div>
+</body>
+</html>

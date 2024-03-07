@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            border: 5px solid black;
+
+            border-bottom: none;
+        }
+        table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+#helo{
+    padding: 10px;
+}
+#green{
+    background-color: green;
+    font-size: 15px;
+}
+#gray{
+    background-color: rgb(208, 204, 204);
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+    <div id="helo">
+    <table>
+        <tr id="green">
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>price per unit</th>
+            <th>Description</th>
+            <th>Total Price</th>
+        </tr>
+        <tr>
+            <td>Product 1</td>
+            <td>2</td>
+            <td>10</td>
+            <td>This Product 1</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Product 2</td>
+            <td>3</td>
+            <td>20</td>
+            <td>This is product 2</td>
+            <td>60</td>
+        </tr>
+        <tr id="gray">
+            <td colspan="4">Sum</td>
+            <td>80</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
